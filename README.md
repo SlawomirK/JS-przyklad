@@ -6,5 +6,5 @@ Wykorzystano
 * aktualna pogoda pobrana z openweathermap dla danych uzyskanych z geolokalizacji i przy wykorzystaniu różnych ikon pogody
 
 Katalog NodeEkspres zawiera
-* 7a serwer wykonujący proste obliczenia
+* 7a serwer wykonujący proste obliczenia na podstawie danych przesłanych w URL przeglądarki
 * 7b serwer renderujący formularz, odbierający dane z formularza i wysyłający odpowiedź
