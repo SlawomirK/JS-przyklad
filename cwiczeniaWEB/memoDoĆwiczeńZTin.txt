@@ -1,0 +1,25 @@
+memo na wszelki wypadek
+Ćwiczenie z Node.js&Express
+Cwiwczenie A
+błąd który często robię
+Zapominam że nie jestem w katalogu NodeEkspress gdy wywołuję komendę node 7a.js
+działania odpalają się na ścieżce np dla odejmowania http://localhost:8888/sub/2/2
+Ćwiczenie B
+node 7b.js
+a) http://localhost:3000/hello
+b) http://localhost:3000/form
+c) jest renderowane automatycznie po wysłaniu danych z formularza powyżej
+d) tutaj jest coś nie tak.
+1) chciałem stworzyć formularz który będzie wysyłał dane w formacie json przerabiając go sposobem pokazanym
+przy okazji Ajax
+próbowałem go odpalać zarówno jako plik html jak równierz uruchamiając go na serwerze jako wyrenderowany hbs
+W obu przypadkach nie udało się chociaż serwer przyjmuje dane chyba prawidłowo.
+Wniosek Ajax czekając na odpowiedź uniemożliwia render nowej strony. To w pliku ajax należy obsłużyć generowanie
+nowej strony. Upewnić się
+
+Ćwiczenia z Angulara
+W trakcie(niedokończone)
+uruchamia się przez ng serve, wygenerowana strona jest na http://localhost:4200/ 
+ngFor wyświetla zawartość listy(symulującą bazę danych) z preparaty-list.component obiekt preparat jest zdefiniowany
+w models/preparat
+ngIf obsługuje sytuację gdy lista jest pusta, zamiast tabeli wyświetla się ino o pustym magazynie

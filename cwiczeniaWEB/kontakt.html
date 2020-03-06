@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Środki ochorny roślin</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="stylesheet" href="style/custom.css">
+
+    <script type="text/javascript" language="javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/kontaktWalidate.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-success  navbar-expand-md">
+
+        <a href="index.html" class="navbar-brand"><img src="images\logo.png" alt="Środki dla rolnictwa"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navContent">
+
+                <div class="navbar-nav  text-lg ml-auto">
+                    <a href="index.html" class="nav-item nav-link text-warning">Strona domowa</a>
+                    <a href="produkty.html" class="nav-item nav-link text-warning">Produkty</a>
+                    <a href="o_nas.html" class="nav-item nav-link text-warning">O nas</a>
+                    <a href="kontakt.html" class="nav-item nav-link active text-white">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <br>
+    <div class="container contact ">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+                    <h2>Napisz.</h2>
+                    <h4>Może mamy preparat którego potrzebujesz</h4>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <form id="formularz" action="register.php" method="post">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label class="control-label-fname col-sm-10" for="fname">Imię: <small><span
+                                        class="error text-danger" id="imie_error_message"></span></small> </label>
+                            <div class="col-sm-10">
+                                <input type="text" minlength="3" class="form-control" id="fname" name="fname" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="sec_name">Drugie imię:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="sec_name" name="sec_name">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label-sur_name col-sm-10" for="sur_name">Nazwisko:<small><span
+                                            class="error text-danger"
+                                            id="nazwisko_error_message"></span></small></label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="sur_name" name="sur_name" required>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-4" for="tel">Telefon:</label>
+                                    <div class="col-sm-10">
+                                        <input type="tel" class="form-control" id="tel" placeholder="XXX XXX XXX"
+                                            name="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
+                                    </div>
+                                    <small class="text-muted">np. 022 123 222 </small>
+                                    <fieldset class="container-fluid ">
+                                        <div class="form-group">
+                                            <div class="row pt-3">
+                                                <label class="control-label col-md-6" for="forma">Preferowana forma
+                                                    kontaktu</label>
+
+                                                <div class="control-label col-md-5 ml-auto ">
+                                                    <select id="forma" name="forma" required>
+                                                        <option value="m">email</option>
+                                                        <option value="t">telefon</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="container-fluid">
+                                        <div class="form-group">
+                                            <small>
+                                                <span class="error text-danger"
+                                                    id="data1_error_message"></span><br></small>
+                                            <div class="row daty">
+                                                <label class="control-label_daty col-sm-2" for="date">Data
+                                                    dostawy</label>
+                                                <div class="col-sm-4 ">
+                                                    <label class="control-label_daty col-sm-2" for="date1">Od </label>
+                                                    <input type="date" class="form-control" id="date1" name="day1"
+                                                        required>
+                                                    
+                                                </div>
+                                                <div class="col-sm-4 ">
+                                                    <label class="control-label_daty col-sm-2" for="date2"> Do <small>
+                                                            <span class="error text-danger"
+                                                                id="data2_error_message"></span></small></label>
+                                                    <input type="date" class="form-control" id="date2" name="day2"
+                                                        required>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+
+                                    <!--
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="email">Email:</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Wprowadź email"
+                                            name="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="comment">Komentarz:</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                </div>
+
+                            -->
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-info">Wyślij</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> <!-- Wprowadzenie -->
+
+
+    <!-- Realizacje -->
+
+
+    <!-- Kontakt -->
+
+    <!-- Stopka -->
+
+
+    <footer class="bg-success text-white ">
+        <div class="container">
+            <div class="row ">
+                <div class="container col-md-3 footer-first-col">
+                    <p>KONTAKT</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-clock-o text-warning " aria-hidden="true"></i>Pn.-Pt.
+                            8:00-16:00
+                        </li>
+
+                        <li>
+                            <i class="fa fa-phone text-warning " aria-hidden="true"></i>(22)123-456-789
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope text-warning " aria-hidden="true"></i><a class="text-white"
+                                href="mailto: srodki@jakasDomena.pl">srodki@jakasDomena.pl</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right text-warning" aria-hidden="true"></i>
+                            <a class="text-white" href="kontakt.html" text-white>Formularz
+                                kontaktowy</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="container col-md-3 footer-first-col">
+                    <p>NASZA FIRMA</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-angle-double-right text-warning" aria-hidden="true"></i> <a
+                                class="text-white" href="o_nas.html">O nas</a>
+                        </li>
+                        <li><i class="fa fa-angle-double-right text-warning" aria-hidden="true"></i> <a
+                                class="text-white" href="#">Polityka prywatności</a>
+                        </li>
+                        <li><i class="fa fa-angle-double-right text-warning" aria-hidden="true"></i> <a
+                                class="text-white" href="#">Regulamin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 footer-second-col p-3">
+                    <p>Zachęcamy do pozostawienia nam swojego adresu email abyśmy mogli informować Cię
+                        o nowościach w naszym
+                        sklepie</p>
+                    <form action="#">
+                        <div>
+                            <label for="name"> Imię </label>
+                            <input type="text" id="name" placeholder="Twoje imię" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="e-mail" placeholder="Twój email" class="form-control">
+                        </div>
+                        <div class="form-check">
+
+                            <label class="form-check-label">
+                                <input type="checkbox" value="ok" class="form-check-input">
+                                Wyrażam zgodę na przetwarzanie danych osobowych przez
+                                Srodki Ochrony S.A.
+                                w celu przesyłania treści marketingowych na mój adres e-mail podany
+                                powyżej
+                                w formularzu
+                                kontaktowym</label>
+                        </div>
+                        <button type="submit" class="btn btn-inverse">SUBSKRYBUJ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Prawa autorskie -->
+        <section class="copyright p-3 text-center">
+            <div class="container-fluid">
+                &copy; Copyright 2019-2020 Sławomir Kobyliński wszelkie prawa zastrzeżone
+            </div>
+        </section>
+    </footer>
+
+    <script type="text/javascript" language="javascript" src="js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" language="javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/kontaktWalidate.js"></script>
+
+
+
+</body>
+
+</html>
