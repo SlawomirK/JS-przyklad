@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pl">
+    <meta charset="UTF-8">
+    <title>Formularz do 7b</title>
+
+    <style>
+        #panel{
+            width: 400px;
+            margin: 0 auto;
+            display: flex;
+            padding: 10px 5px;  
+            border: 1px solid silver;   
+               
+        }    
+        input{
+            display: block
+        }  
+       
+    </style>
+
+</head>
+
+<body>
+    <div id="panel">
+    <form id="formularz" action="/formdata" method="post">
+        <div class="form-group">
+            <label class="label1" for="d1">Imię</label>
+            <input type="text" class="form-control" id="d1" name="d1">
+        </div>
+
+        <div class="form-group">
+            <label class="label1" for="d2">Nazwisko</label>
+            <input type="text" class="form-control" id="d2" name="d2">
+        </div>
+
+        <div class="form-group">
+            <label class="label1" for="d3">nr telefonu</label>
+            <input type="text" class="form-control" id="d3" name="d3">
+        </div>
+
+        <button type="submit" class="btn">Wyślij</button>
+    </form>
+</div>
+</body>
+
+</html>

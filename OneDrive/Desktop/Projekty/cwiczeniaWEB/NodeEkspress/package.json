@@ -1,0 +1,21 @@
+{
+  "name": "nodeekspress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "7a.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hbs": "^4.0.6",
+    "jquery-serializejson": "^2.9.0",
+    "request": "^2.88.0",
+    "serializejson": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

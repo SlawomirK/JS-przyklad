@@ -1,0 +1,1 @@
+prywatny klucz do mongodb na mlab/ a4eb1332-547d-46b7-84f8-9ca9ebe42a03
